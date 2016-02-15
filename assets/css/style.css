@@ -229,7 +229,7 @@ input {
 #head .logo h2{
 	font-weight: 900;
 	color: white;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 #head h3 {
@@ -327,7 +327,8 @@ input {
 #footer {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background-color: #22A7F0;
+	/*background-color: #22A7F0;*/
+	background-color: rgba(34, 167, 240, 0.82);
 }
 
 #footer i {
@@ -340,7 +341,7 @@ input {
 }
 
 /* HEADER 2 - PORTFOLIO SECTION */
-#h2 {
+#header2 {
 	background: url(../img/header-2.jpg) no-repeat center top;
 	padding-top: 5px;
 	background-attachment: relative;
@@ -360,21 +361,25 @@ input {
     color: white;
 }
 
-#h2 .logo {
+#header2 .logo {
 	margin-top: 30px;
 	margin-left: 40px;
 	padding-bottom: 150px;
 }
 
-#h2 .logo h2{
+#header2 .logo h2{
 	font-weight: 900;
 	color: white;
 	letter-spacing: 1px;
 }
 
-#h2 h3 {
+#header2 h3 {
 	margin-top: 30px;
 	letter-spacing: 1px;
+}
+
+#request_button {
+	    outline: none !important;
 }
 
 .footer2 {
