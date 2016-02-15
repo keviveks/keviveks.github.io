@@ -8,8 +8,12 @@
 		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
 	});
 
-  $("#keviveks_blog").on("click", function() {
+  $("#keviveks-blog").on("click", function() {
     window.open("https://keviveks.wordpress.com", '_blank');
+  });
+
+  $("#keviveks-web-designs").on("click", function() {
+    window.open("http://codepen.io/keviveks/", '_blank');
   });
 })(jQuery);
 
