@@ -19,58 +19,63 @@
 
 // animate function on head
 (function($) {
-  var words = ['passionate','focused','enthusiastic'],
-  currentStep = 0,
-  textEl = document.querySelector('#highlights'),
-  oldWord = '';
+    var textHolder = document.querySelector("#highlights");
+    var newWord;
+    var currentWord = "";
 
-  setTimeout(changeWord, 1500);
-
-  function changeWord() {
-    oldWord = textEl.innerHTML;
-    // check if there is a word atm or not
-    if (oldWord.length < 1) {
-      if (currentStep !== words.length -1) {
-        currentStep ++;
-      } else {
-        currentStep = 0;
-      }
-      addNextWord();
-    } else {
-        setTimeout(deleteWord, 1200);
+    function changingText() {
+      this.words = ['passionate','focused','enthusiastic'];
+      this.step = 0;
     }
-  };
 
-  function deleteWord() {
-    var WordLength = oldWord.length,
-    currentWord = textEl.innerHTML,
-    currentLength = currentWord.length;
+    var ChangingText = new changingText();
+    
 
-    // The word is deleted so, start adding in the new one
-    if (currentLength < 1) {
-      changeWord();
+    ChangingText.addWord = function() {
+      if(currentWord.length < 1) {
+        newWord = this.words[this.step];
+      }
+
+      var currentLength = currentWord.length;
+
+      if(currentLength == newWord.length) {
+        ChangingText.deleteWord();
+        return;
+      }
+      
+      // add new word by single character
+      currentWord = newWord.substring(0, currentLength + 1);
+      textHolder.innerHTML = currentWord;
+      setTimeout(ChangingText.addWord, 300);
+    }
+
+    ChangingText.changeWord = function() {
+      ++this.step; // increment step to get next word
+      if(this.step == this.words.length) {
+        this.step = 0;
+      }
+
+      ChangingText.addWord();
       return;
     }
-    // Remove a charachter
-    textEl.innerHTML = currentWord.substring(0, currentLength - 1);
-    setTimeout(deleteWord, 300);
-  }
 
-  function addNextWord() {
-      var currentWord = textEl.innerHTML,
-      currentLength = currentWord.length,
-      nextWord = words[currentStep],
-      nextWordLength = nextWord.length;
-
-      if (currentLength === nextWordLength) {
-        changeWord();
+    ChangingText.deleteWord = function() {
+      if(currentWord.length < 1) {
+        ChangingText.changeWord();
         return;
       }
 
-      // add a charachter
-      textEl.innerHTML = nextWord.substring(0, currentLength + 1);
-      setTimeout(addNextWord, 300);
-  }
+      var currentLength = currentWord.length;
+
+      // remove word by single character
+      currentWord = currentWord.substring(0, currentLength - 1);
+      textHolder.innerHTML = currentWord;
+      setTimeout(ChangingText.deleteWord, 300);
+    }
+
+    // start with new word
+    document.onready = ChangingText.addWord();
+  
 })(jQuery);
 
 // Portfolio
