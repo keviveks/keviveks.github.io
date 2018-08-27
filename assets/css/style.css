@@ -1,43 +1,38 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Theme Name: Basic
- * URL: http://blacktie.co
- * Version: 1.0
- */
-
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
 
 /* Import fonts */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
-
 * {
 	margin: 0;
 	padding: 0px;
-    font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
+
 body {
 	background: #fff;
 	margin: 0;
 	color: #5a5a5a;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
-
 
 p {
 	padding: 0;
 	margin-bottom: 12px;
-    font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 28px;
@@ -50,20 +45,48 @@ body {
 	height: 100%;
 }
 
-.alignleft { float: left; }
-.alignright { float: right; }
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
 .aligncenter {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	clear: both;
 }
-.centered {text-align: center}
-.mt {margin-top: 50px;}
-.mb {margin-bottom: 50px; font-size: 30px;}
-.mtb {margin-top: 50px; margin-bottom: 50px;}
-.mtb2 { margin-top: 100px; margin-bottom: 100px;}
-.ptb {padding-top: 60px; padding-bottom: 60px;}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 50px;
+}
+
+.mb {
+	margin-bottom: 50px;
+	font-size: 30px;
+}
+
+.mtb {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.mtb2 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.ptb {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 
 .clear {
 	clear: both;
@@ -71,18 +94,21 @@ body {
 	font-size: 0;
 	height: 0;
 	line-height: 0;
-	width:100%;
+	width: 100%;
 }
-::-moz-selection  {
+
+::-moz-selection {
 	color: #fff;
-	text-shadow:none;
-	background:#2B2E31;
+	text-shadow: none;
+	background: #2B2E31;
 }
+
 ::selection {
 	color: #fff;
-	text-shadow:none;
-	background:#2B2E31;
+	text-shadow: none;
+	background: #2B2E31;
 }
+
 *,
 *:after,
 *:before {
@@ -92,6 +118,7 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 a {
 	padding: 0;
 	margin: 0;
@@ -101,19 +128,19 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #1abc9c;
+	color: white;
 }
+
 a:hover,
 a:focus {
-  text-decoration: none;
-  color:#696E74;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
 }
 
 .nopadding {
 	padding: 0px !important;
 	margin: 0px;
 }
-
 
 /* FORM CONFIGURATION */
 
@@ -152,36 +179,36 @@ input {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 14px 28px 13px 28px;
-	}
+}
 
 .btn-clear {
 	background: transparent;
 	color: white;
 	border: 2px solid white;
 }
+
 .btn-clear:hover {
 	background: white;
 	color: #2f2f2f;
 }
 
-
-
 .dmbutton:hover,
 .dmbutton:active,
-.dmbutton:focus{
+.dmbutton:focus {
 	color: #ffffff;
 	background-color: #222222;
 	border-color: #ffffff;
 }
+
 .dmbutton {
-	background:rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	padding-top: 1.025rem;
 	padding-right: 2.25rem;
-	letter-spacing:0.85px;
+	letter-spacing: 0.85px;
 	padding-bottom: 1.0875rem;
 	padding-left: 2.25rem;
 	font-size: 1.55rem;
@@ -200,6 +227,7 @@ input {
 }
 
 /* HEADER SECTION */
+
 #head {
 	background: url(../img/keviveks.jpg) no-repeat center top;
 	padding-top: 5px;
@@ -207,17 +235,15 @@ input {
 	background-position: center center;
 	min-height: 700px;
 	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
 }
 
 #head .logo {
@@ -226,7 +252,7 @@ input {
 	padding-bottom: 150px;
 }
 
-#head .logo h2{
+#head .logo h2 {
 	font-weight: 900;
 	color: white;
 	letter-spacing: 2px;
@@ -241,46 +267,63 @@ input {
 }
 
 /* GREY SECTION */
-#works {
+
+#works,
+#skills {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: #f5f5f5;
 }
 
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.left.carousel-control { width: 10%; }
+.right.carousel-control { width: 10%; }
+.onebyone-carosel .active.left { left: -33.33%; }
+.onebyone-carosel .active.right { left: 33.33%; }
+.onebyone-carosel .next { left: 33.33%; }
+.onebyone-carosel .prev { left: -33.33%; }
+
 .portfolio {
-	padding:0 !important;
-	margin:0 !important;
-	display:block;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: block;
 }
 
-
-.portfolio-item .title:before {border-radius:0; display:none}
-.portfolio-item p {margin:0px 0 30px;}
-.portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
-
-
-.tpl6 h3
-{
-	color:#fff;
-	margin:0;
-	padding:40px 5px 0;
-	font-size:16px;
-	text-transform:uppercase;
-}
-.tpl6 .dmbutton
-{
-	display:inline-block;
-	margin:30px 5px 20px 5px;
-	font-size:13px;
+.portfolio-item .title:before {
+	border-radius: 0;
+	display: none
 }
 
-.tpl6 .bg
-{
-	height:100%;
-	width:100%;
-	background-color:#00b3fe;
-	background-color:rgba(0,179,254,.9);
-	text-align:center;
+.portfolio-item p {
+	margin: 0px 0 30px;
+}
+
+.portfolio-item h3 {
+	margin: -10px 0 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.tpl6 h3 {
+	color: #fff;
+	margin: 0;
+	padding: 40px 5px 0;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.tpl6 .dmbutton {
+	display: inline-block;
+	margin: 30px 5px 20px 5px;
+	font-size: 13px;
+}
+
+.tpl6 .bg {
+	height: 100%;
+	width: 100%;
+	background-color: #00b3fe;
+	background-color: rgba(0, 179, 254, .9);
+	text-align: center;
 }
 
 /* skills */
@@ -297,6 +340,7 @@ input {
 }
 
 /* CONTACT SEPARATOR */
+
 #contact {
 	background: url(../img/bangalore-img.jpeg) no-repeat center top;
 	padding-top: 80px;
@@ -305,17 +349,15 @@ input {
 	min-height: 450px;
 	width: 100%;
 	color: white;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
 }
 
 #contact h3 {
@@ -324,6 +366,7 @@ input {
 }
 
 /* FOOTER */
+
 #footer {
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -341,6 +384,7 @@ input {
 }
 
 /* HEADER 2 - PORTFOLIO SECTION */
+
 #header2 {
 	background: url(../img/header-2.jpg) no-repeat center top;
 	padding-top: 5px;
@@ -348,17 +392,15 @@ input {
 	background-position: center center;
 	min-height: 700px;
 	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
 }
 
 #header2 .logo {
@@ -367,7 +409,7 @@ input {
 	padding-bottom: 150px;
 }
 
-#header2 .logo h2{
+#header2 .logo h2 {
 	font-weight: 900;
 	color: white;
 	letter-spacing: 1px;
@@ -379,7 +421,7 @@ input {
 }
 
 #request_button {
-	    outline: none !important;
+	outline: none !important;
 }
 
 .footer2 {

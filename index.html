@@ -29,7 +29,6 @@
       #highlights {
         min-width: 189px;
       }
-
       @keyframes blinking {
         0%    { opacity: 0; }
         50%   { opacity: 0; }
@@ -40,7 +39,6 @@
         content: '|';
         animation: blinking 1.2s infinite;
       }
-
       #keviveks-blog:hover { cursor: pointer; cursor: hand; }
       #keviveks-web-designs:hover { cursor: pointer; cursor: hand; }
     </style>
@@ -60,20 +58,26 @@
           </div>
         </div>
 
-        <div class="row mt" id="keviveks-web-designs">
-          <div class="col-sm-4">
-            <i class="ion-ios7-monitor-outline"></i>
-            <h3>Web Designs</h3>
+        <div class="row mt">
+          <div class="col-sm-4" id="keviveks-web-designs">
+            <a href="https://keviveks.wordpress.com" target="_blank" rel="noopener noreferrer">
+              <i class="ion-ios7-monitor-outline"></i>
+              <h3>Web Designs</h3>
+            </a>
           </div>
 
-          <div class="col-sm-4">
-            <i class="ion-ios7-browsers-outline"></i>
-            <h3>Tutorials</h3>
+          <div class="col-sm-4" id="keviveks-tutorials">
+            <a href="https://keviveks.wordpress.com" target="_blank" rel="noopener noreferrer">
+              <i class="ion-ios7-browsers-outline"></i>
+              <h3>Tutorials</h3>
+            </a>
           </div>
 
           <div class="col-sm-4" id="keviveks-blog">
-            <i class="ion-ios7-copy-outline"></i>
-            <h3>Blogs</h3>
+            <a href="https://codepen.io/keviveks/" target="_blank" rel="noopener noreferrer">
+              <i class="ion-ios7-copy-outline"></i>
+              <h3>Blogs</h3>
+            </a>
           </div>
         </div>
       </div>
@@ -99,17 +103,17 @@
       </div>
     </div>
 
-    <div id="works">
-      <!-- <div class="container">
+    <!-- <div id="works">
+      <div class="container">
         <div class="row centered">
           <h2>Check some of my latest works.</h2>
           <div class="col-md-8 col-md-offset-2">
             <p>I usually used to explore and work on various new technologies.<br/>And some of my works are.</p>
           </div>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="portfolio-centered mt">
+      <div class="portfolio-centered mt">
         <div class="recentitems portfolio">
           <div class="portfolio-item graphic-design">
             <div class="he-wrap tpl6">
@@ -241,29 +245,107 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
+    </div> -->
 
+    <div id="skills">
       <div class="container mt">
         <div class="row skills centered">
           <p class="mb">Some skills I used to work on.</p>
-          <div class="col-sm-2 col-sm-offset-1">
-            <img src="assets/img/php-img.png" title="PHP" alt="PHP Image">
-          </div>
-          <div class="col-sm-2">
-            <img src="assets/img/mysql-img.png" title="MySql" alt="MySql Image">
-          </div>
-          <div class="col-sm-2">
-            <img src="assets/img/codeignitor-img.png" title="CodeIgnitor" alt="CodeIgnitor Image">
-          </div>
-          <div class="col-sm-2">
-            <img src="assets/img/html5-img.png" title="Html5" alt="Html5 Image">
-          </div>
-          <div class="col-sm-2">
-            <img src="assets/img/jquery-img.png" title="Jquery" alt="Jquery Image">
+          <div class="span12">
+            <div class="well">
+              <div id="skills-carousel" class="carousel fdi-Carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+                  <div class="carousel-inner onebyone-carosel">
+                    <div class="item active">
+                      <div class="col-md-4">
+                        <a href="https://nodejs.org/en/">
+                          <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" class="img-responsive center-block" title="Nodejs" alt="Nodejs Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://reactjs.org/">
+                          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" class="img-responsive center-block" title="ReactJS" alt="ReactJS Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://angular.io/">
+                          <img src="https://angular.io/assets/images/logos/angular/angular.svg" class="img-responsive center-block" title="Angular" alt="Angular Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://www.mongodb.com/">
+                          <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" class="img-responsive center-block" title="MongoDB" alt="MongoDB Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="http://www.php.net/">
+                          <img src="http://sg2.php.net/images/logos/php-logo.svg" class="img-responsive center-block" title="PHP" alt="PHP Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://www.mysql.com/">
+                          <img src="https://labs.mysql.com/common/logos/mysql-logo.svg" class="img-responsive center-block" title="MySql" alt="MySql Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4">
+                          <a href="https://laravel.com/">
+                            <img src="https://laravel.com/assets/img/laravel-logo.png" class="img-responsive center-block" title="Laravel" alt="Laravel Image">
+                          </a>
+                        </div>
+                      </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://www.codeigniter.com/">
+                          <img src="https://www.codeigniter.com/assets/images/ci-logo-big.png" class="img-responsive center-block" title="CodeIgnitor" alt="CodeIgnitor Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://www.w3.org/TR/html52/">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png" class="img-responsive center-block" title="Html5" alt="Html5 Image">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-4">
+                        <a href="https://www.javascript.com/">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="img-responsive center-block" title="Javascript" alt="Javascript Image">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#eventCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#eventCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+                <!--/carousel-inner-->
+              </div>
+              <!--/skills-carousel-->
+            </div>
+            <!--/well-->
           </div>
         </div>
       </div>
     </div>
+    
 
     <div id="contact">
       <div class="container">
@@ -336,6 +418,5 @@
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/jquery.isotope.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/functions.js"></script>
   </body>
 </html>

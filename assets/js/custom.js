@@ -1,20 +1,11 @@
 (function($) {
-
-// prettyPhoto
+  // prettyPhoto
 	jQuery(document).ready(function(){
 		jQuery('a[data-gal]').each(function() {
 			jQuery(this).attr('rel', jQuery(this).data('gal'));
 		});
 		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
 	});
-
-  $("#keviveks-blog").on("click", function() {
-    window.open("https://keviveks.wordpress.com", '_blank');
-  });
-
-  $("#keviveks-web-designs").on("click", function() {
-    window.open("http://codepen.io/keviveks/", '_blank');
-  });
 })(jQuery);
 
 // animate function on head
@@ -77,6 +68,28 @@
     document.onready = ChangingText.addWord();
   
 })(jQuery);
+
+// Skills carousel
+(function($) {
+  $('#skills-carousel').carousel({
+    interval: 10000
+  })
+  $('.fdi-Carousel .item').each(function () {
+    var next = $(this).next();
+    if (!next.length) {
+        next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    if (next.next().length > 0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+    }
+    else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+  });
+})(jQuery);
+
 
 // Portfolio
 (function($) {
