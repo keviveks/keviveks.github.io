@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log message
-        run: echo "TEST: Running scheduled cluster task from GitHub Actions!"
+        run: |
+          echo "TEST: Running scheduled cluster task from GitHub Actions!"
       - name: Curl request
         run: |
           curl 'https://dev-app.brainfish.app/api/cron.cluster?token=' \
