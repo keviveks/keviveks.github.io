@@ -188,21 +188,32 @@ h1 {
 }
 
 .lede {
-  margin: 0;
   max-width: 62ch;
-  color: var(--text);
+  color: var(--muted);
+}
+
+.lede p {
+  margin: 0;
+}
+
+.lede p + p {
+  margin-top: 14px;
 }
 
 .hero-line {
   animation: rise 0.55s ease both;
 }
 
-.hero-copy .hero-line:nth-child(2) {
+.lede .hero-line:nth-child(1) {
   animation-delay: 80ms;
 }
 
-.hero-copy .hero-line:nth-child(3) {
-  animation-delay: 160ms;
+.lede .hero-line:nth-child(2) {
+  animation-delay: 140ms;
+}
+
+.lede .hero-line:nth-child(3) {
+  animation-delay: 200ms;
 }
 
 @keyframes rise {
@@ -315,6 +326,12 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+.card h3 a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px;
+}
+
 .card p {
   margin: 0;
   color: var(--muted);
@@ -378,8 +395,8 @@ h1 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 24px;
-  padding-bottom: 22px;
+  gap: 6px 24px;
+  padding-bottom: 32px;
 }
 
 .timeline li:last-child {
@@ -410,8 +427,20 @@ h1 {
   color: var(--muted);
 }
 
-.role {
+.role-block {
   flex: 1 1 220px;
+  min-width: 0;
+}
+
+.role {
+  display: block;
+  font-weight: 500;
+}
+
+.role-block p {
+  margin: 8px 0 0;
+  max-width: 68ch;
+  color: var(--muted);
 }
 
 .contact-links {
