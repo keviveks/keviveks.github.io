@@ -17,4 +17,3 @@ Open [http://127.0.0.1:8765](http://127.0.0.1:8765).
 - `index.html` — page content
 - `assets/css/style.css` — layout, type, and motion
 - `assets/js/site.js` — scroll reveal and the timeline draw
-- `Portfolio-html/` — design reference for the profile copy, not the live page
