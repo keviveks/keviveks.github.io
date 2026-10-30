@@ -335,6 +335,7 @@ h1 {
 .section {
   padding: 72px 0;
   border-top: 1px solid var(--line);
+  scroll-margin-top: 104px;
 }
 
 .label {
@@ -545,6 +546,10 @@ h1 {
   margin: 8px 0 0;
   max-width: 68ch;
   color: var(--muted);
+}
+
+.source-only {
+  display: none;
 }
 
 .contact-links {
