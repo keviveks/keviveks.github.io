@@ -12,6 +12,35 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  var hero = document.querySelector(".hero");
+  var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  if (hero && !reduce && finePointer) {
+    var frame = 0;
+    var hovering = false;
+    var glowX = 0;
+    var glowY = 0;
+
+    hero.addEventListener("pointermove", function (event) {
+      var rect = hero.getBoundingClientRect();
+      glowX = event.clientX - rect.left;
+      glowY = event.clientY - rect.top;
+      hovering = true;
+      if (frame) return;
+      frame = requestAnimationFrame(function () {
+        frame = 0;
+        hero.style.setProperty("--glow-x", glowX + "px");
+        hero.style.setProperty("--glow-y", glowY + "px");
+        if (hovering) hero.classList.add("is-glowing");
+      });
+    });
+
+    hero.addEventListener("pointerleave", function () {
+      hovering = false;
+      hero.classList.remove("is-glowing");
+    });
+  }
+
   function showSettled() {
     sections.forEach(function (section) {
       section.classList.add("is-in");
