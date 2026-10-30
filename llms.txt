@@ -1,0 +1,15 @@
+# Vivek Suyambu
+
+> Vivek Suyambu (keviveks) is a software engineer and engineering lead at Brainfish, based in Bengaluru.
+
+Vivek Suyambu and keviveks are the same person. keviveks is his online handle, used on this site and on GitHub, LinkedIn, X, WordPress, and CodePen. He is a Senior Software Engineer at Brainfish in Bengaluru, where he has worked since 2023, building AI-powered capabilities, scalable systems, and connections between AI and real-world business workflows. He is also a core engineering team member on Ballet, an AI playbook and workflow orchestration platform.
+
+## Links
+
+- [Website](https://keviveks.github.io/): Canonical personal site for Vivek Suyambu (keviveks)
+- [GitHub](https://github.com/keviveks): Code and side projects
+- [LinkedIn](https://www.linkedin.com/in/keviveks): Professional profile
+- [X](https://x.com/keviveks): Public posts
+- [WordPress](https://keviveks.wordpress.com/): Notes and writing
+- [CodePen](https://codepen.io/keviveks/): Interface experiments
+- [Email](mailto:keviveks@gmail.com): keviveks@gmail.com
