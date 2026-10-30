@@ -2,421 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="keviveks - Tutorials, Blogs, Web Technologies">
-    <meta name="author" content="keviveks">
-    <link rel="icon" href="assets/img/favicon.ico">
-
-    <title>keviveks - Tutorials, Blogs, Web Technologies</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <meta name="description" content="Vivek Suyambu builds backend integrations and platform architecture for AI-powered support. Personal site: writing, experiments, and selected work.">
+    <meta name="author" content="Vivek Suyambu">
+    <title>Vivek Suyambu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
-    <style media="screen">
-      #head-lines span {
-        float: left;
-        font-size: 32px;
-        /* position: relative; */
-      }
-      #highlights {
-        min-width: 189px;
-      }
-      @keyframes blinking {
-        0%    { opacity: 0; }
-        50%   { opacity: 0; }
-        51%   { opacity: 1; }
-        100%  { opacity: 1; }
-      }
-      #highlights:after {
-        content: '|';
-        animation: blinking 1.2s infinite;
-      }
-      #keviveks-blog:hover { cursor: pointer; cursor: hand; }
-      #keviveks-web-designs:hover { cursor: pointer; cursor: hand; }
-    </style>
+    <script>document.documentElement.classList.add("js");</script>
   </head>
-
   <body>
-
-    <div id="head">
-      <div class="logo">
-        <h2>KEVIVEKS</h2>
+    <header class="site-header">
+      <div class="wrap header-bar">
+        <a class="name" href="#top">Vivek Suyambu</a>
+        <nav class="nav" aria-label="Page">
+          <a href="#writing">Writing</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class="container centered">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1 id="head-lines">Hi, I'm <b>Vivek S</b><br/>
-              <span>A&nbsp;</span><span id="highlights">passionate</span><span>&nbsp;Web Developer&nbsp;</span><span>based in&nbsp;</span><span>Bangalore.</span></h1>
-          </div>
-        </div>
+    </header>
 
-        <div class="row mt">
-          <div class="col-sm-4" id="keviveks-web-designs">
-            <a href="https://keviveks.wordpress.com" target="_blank" rel="noopener noreferrer">
-              <i class="ion-ios7-monitor-outline"></i>
-              <h3>Web Designs</h3>
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow hero-line">Software Engineer · Brainfish · Bengaluru<span class="caret" aria-hidden="true"></span></p>
+          <h1 class="hero-line">Backend integrations and platform architecture for AI-powered support.</h1>
+          <p class="lede hero-line">I build backend integrations and workflow orchestration for Brainfish’s AI knowledge and support platform. My work spans architecture decisions, CRM, support and messaging integrations, and self-serve billing. I also lead technical work with enterprise clients, from root-cause analysis to integration design.</p>
+        </div>
+      </section>
+
+      <section id="writing" class="section reveal">
+        <div class="wrap">
+          <h2 class="label reveal-item">Writing</h2>
+          <div class="cards cards-3">
+            <a class="card reveal-item" href="https://keviveks.wordpress.com/" target="_blank" rel="noopener noreferrer">
+              <span class="card-kicker">Blog</span>
+              <span class="card-title">Notes and writing.</span>
+              <span class="card-dest">keviveks.wordpress.com</span>
+            </a>
+            <a class="card reveal-item" href="https://codepen.io/keviveks/" target="_blank" rel="noopener noreferrer">
+              <span class="card-kicker">Designs</span>
+              <span class="card-title">Interface experiments.</span>
+              <span class="card-dest">codepen.io/keviveks</span>
+            </a>
+            <a class="card reveal-item" href="https://github.com/keviveks" target="_blank" rel="noopener noreferrer">
+              <span class="card-kicker">GitHub</span>
+              <span class="card-title">Code and side projects.</span>
+              <span class="card-dest">github.com/keviveks</span>
             </a>
           </div>
+        </div>
+      </section>
 
-          <div class="col-sm-4" id="keviveks-tutorials">
-            <a href="https://keviveks.wordpress.com" target="_blank" rel="noopener noreferrer">
-              <i class="ion-ios7-browsers-outline"></i>
-              <h3>Tutorials</h3>
-            </a>
-          </div>
-
-          <div class="col-sm-4" id="keviveks-blog">
-            <a href="https://codepen.io/keviveks/" target="_blank" rel="noopener noreferrer">
-              <i class="ion-ios7-copy-outline"></i>
-              <h3>Blogs</h3>
-            </a>
+      <section id="work" class="section reveal">
+        <div class="wrap">
+          <h2 class="label reveal-item">Work</h2>
+          <div class="cards cards-2">
+            <article class="card reveal-item">
+              <h3>Ballet — workflow orchestration</h3>
+              <p>Core engineer on the platform that connects Brainfish AI to CRM, support and messaging tools through configurable workflows and playbooks.</p>
+              <ul>
+                <li>Salesforce Closed Won to implementation handoff document, with evidence budgeting for large deals</li>
+                <li>WhatsApp support: AI answers by default, escalates to a human agent in one tracked thread</li>
+                <li>Zendesk Marketplace listing with a single OAuth connection, plus confidence-based triage</li>
+                <li>Temporal vs BullMQ evaluation, delivered as an ADR and spike report</li>
+                <li>Self-serve billing and cancellation for the move to a single Pro plan</li>
+              </ul>
+            </article>
+            <article class="card reveal-item">
+              <h3>Brainfish — knowledge and support platform</h3>
+              <p>Backend services, APIs and client-facing technical work.</p>
+              <ul>
+                <li>Collection-level filter for the Search API, from parameter to dashboard UI and docs</li>
+                <li>Root-cause analysis of partner integration timeouts and malformed payloads</li>
+                <li>Debugged vector-sync lag and a CPU-bound rendering issue; fixed a SQL injection in a backend utility</li>
+                <li>Managed workspaces programmatically through MCP tooling</li>
+              </ul>
+            </article>
           </div>
         </div>
+      </section>
+
+      <section id="stack" class="section reveal">
+        <div class="wrap">
+          <h2 class="label reveal-item">Stack</h2>
+          <ul class="chips reveal-item">
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Cloudflare Workers</li>
+            <li>Postgres</li>
+            <li>Salesforce</li>
+            <li>Zendesk</li>
+            <li>REST and webhooks</li>
+            <li>OAuth</li>
+            <li>Vector search</li>
+            <li>System design</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="wrap">
+          <h2 class="label reveal-item">Experience</h2>
+          <ol class="timeline">
+            <li class="is-current reveal-item">
+              <span class="year">2023 — Present</span>
+              <span class="role">Senior Software Engineer, Brainfish</span>
+            </li>
+            <li class="reveal-item">
+              <span class="year">2018 — 2023</span>
+              <span class="role">Senior Software Engineer, Accion Labs</span>
+            </li>
+            <li class="reveal-item">
+              <span class="year">2017 — 2018</span>
+              <span class="role">Software Engineer, Scientific Games</span>
+            </li>
+            <li class="reveal-item">
+              <span class="year">2015 — 2017</span>
+              <span class="role">Software Analyst, CoStrategix</span>
+            </li>
+            <li class="reveal-item">
+              <span class="year">2013 — 2015</span>
+              <span class="role">Software Engineer, Hygrosoft Technologies</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="wrap">
+          <h2 class="label reveal-item">Contact</h2>
+          <div class="contact-links reveal-item">
+            <a href="https://x.com/keviveks" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://www.linkedin.com/in/keviveks" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© 2026 Vivek Suyambu</p>
       </div>
-    </div>
+    </footer>
 
-    <div class="container ptb">
-      <div class="row">
-        <h2 class="centered mb">A little more about me.</h2>
-        <div class="col-md-6">
-          <p>I'm a passionate and enthusiastic web developer with experience in back-end development. Constantly eager to learn, explore and try new things in technologies. I spend my free time surfing web, listen to music and games.</p>
-        </div>
-        <div class="col-md-6">
-          <p>I graduated in 2012 from Anna University, Chennai as a Electronics and Communication Engineer. I started my career in a startup Hygrosoft Technologies as Software Developer and currently works as a Software Analyst in Costrategix Technologies. Native from Kanyakumari, Tamil Nadu.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <img src="assets/img/items.png" class="img-responsive" alt="">
-        </div>
-      </div>
-    </div>
-
-    <!-- <div id="works">
-      <div class="container">
-        <div class="row centered">
-          <h2>Check some of my latest works.</h2>
-          <div class="col-md-8 col-md-offset-2">
-            <p>I usually used to explore and work on various new technologies.<br/>And some of my works are.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-centered mt">
-        <div class="recentitems portfolio">
-          <div class="portfolio-item graphic-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_09.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item web-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_02.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_02.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item graphic-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_03.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_03.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item graphic-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_04.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item books">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_05.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item graphic-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_06.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_06.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item web-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_07.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_07.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item graphic-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_08.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_08.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item graphic-design">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_01.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_01.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item books">
-            <div class="he-wrap tpl6">
-              <img src="assets/img/portfolio/portfolio_10.jpg" class="img-responsive" alt="">
-              <div class="he-view">
-                <div class="bg a0" data-animate="fadeIn">
-                  <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                  <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_10.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div id="skills">
-      <div class="container mt">
-        <div class="row skills centered">
-          <p class="mb">Some skills I used to work on.</p>
-          <div class="span12">
-            <div class="well">
-              <div id="skills-carousel" class="carousel fdi-Carousel slide">
-                <!-- Carousel items -->
-                <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
-                  <div class="carousel-inner onebyone-carosel">
-                    <div class="item active">
-                      <div class="col-md-4">
-                        <a href="https://nodejs.org/en/">
-                          <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" class="img-responsive center-block" title="Nodejs" alt="Nodejs Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://reactjs.org/">
-                          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" class="img-responsive center-block" title="ReactJS" alt="ReactJS Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://angular.io/">
-                          <img src="https://angular.io/assets/images/logos/angular/angular.svg" class="img-responsive center-block" title="Angular" alt="Angular Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://www.mongodb.com/">
-                          <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" class="img-responsive center-block" title="MongoDB" alt="MongoDB Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="http://www.php.net/">
-                          <img src="https://secure.php.net/images/logos/php-logo.svg" class="img-responsive center-block" title="PHP" alt="PHP Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://www.mysql.com/">
-                          <img src="https://labs.mysql.com/common/logos/mysql-logo.svg" class="img-responsive center-block" title="MySql" alt="MySql Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-4">
-                          <a href="https://laravel.com/">
-                            <img src="https://laravel.com/assets/img/laravel-logo.png" class="img-responsive center-block" title="Laravel" alt="Laravel Image">
-                          </a>
-                        </div>
-                      </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://www.codeigniter.com/">
-                          <img src="https://www.codeigniter.com/assets/images/ci-logo-big.png" class="img-responsive center-block" title="CodeIgnitor" alt="CodeIgnitor Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://www.w3.org/TR/html52/">
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png" class="img-responsive center-block" title="Html5" alt="Html5 Image">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-4">
-                        <a href="https://www.javascript.com/">
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="img-responsive center-block" title="Javascript" alt="Javascript Image">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#eventCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#eventCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
-                <!--/carousel-inner-->
-              </div>
-              <!--/skills-carousel-->
-            </div>
-            <!--/well-->
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <div id="contact">
-      <div class="container">
-        <div class="row centered">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>I live in The Incredible India, Bangalore</h1>
-            <h3 class="mb">Work as a Software Analyst<br/>in Costrategix Technologies, Bangalore.</h3>
-            <button class="btn btn-conf btn-clear" data-toggle="modal" data-target="#contactModal" id="request_button">Request for Information</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="footer">
-      <div class="container">
-        <div class="row centered">
-          <div class="col-md-8 col-md-offset-2">
-            <a target="_blank" title="Keviveks Twitter" href="https://twitter.com/keviveks"><i class="ion-social-twitter"></i></a>
-            <a target="_blank" title="Keviveks GitHub" href="https://github.com/keviveks"><i class="ion-social-github"></i></a>
-            <a target="_blank" title="Keviveks Google+" href="https://plus.google.com/u/0/+VivekSvivek"><i class="ion-social-googleplus"></i></a>
-            <!-- <a target="_blank" title="Keviveks Instagram" href="https://www.instagram.com/keviveks/"><i class="ion-social-instagram"></i></a> -->
-            <a target="_blank" title="Keviveks Linkedin" href="https://www.linkedin.com/in/keviveks"><i class="ion-social-linkedin"></i></a>
-            <a target="_blank" title="Keviveks Facebook" href="https://www.facebook.com/keviveks"><i class="ion-social-facebook"></i></a>
-          </div><!--/col-md-8-->
-          <div class="col-md-12 footer2">
-            "Do not follow where the path may lead. Go instead where there is no path and leave a trail" - Ralph Waldo Emerson
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Request for Information popup -->
-    <div id="contactModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Request for Information</h4>
-          </div>
-          <div class="modal-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="form-group">
-                <label for="comment">Comment:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default">Send</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ========== Bootstrap core JavaScript ========== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/retina-1.1.0.js"></script> -->
-    <script src="assets/js/jquery.hoverdir.js"></script>
-    <script src="assets/js/jquery.hoverex.min.js"></script>
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/js/jquery.isotope.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>
