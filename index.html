@@ -15,19 +15,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var theme = "dark";
+        root.classList.add("js");
+        try {
+          var stored = localStorage.getItem("theme");
+          if (stored === "light" || stored === "dark") theme = stored;
+          else if (window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
+        } catch (e) {
+          if (window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
+        }
+        root.setAttribute("data-theme", theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "light" ? "#f6f5f2" : "#090a0b");
+      })();
+    </script>
     <link href="assets/css/style.css" rel="stylesheet">
-    <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
     <header class="site-header">
       <div class="wrap header-bar">
         <a class="name" href="#top">Vivek Suyambu</a>
-        <nav class="nav" aria-label="Page">
-          <a href="#writing">Writing</a>
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-tools">
+          <nav class="nav" aria-label="Page">
+            <a href="#writing">Writing</a>
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button type="button" class="theme-toggle" aria-label="Switch to light theme">
+            <span data-for="dark">Light</span><span data-for="light">Dark</span>
+          </button>
+        </div>
       </div>
     </header>
 
