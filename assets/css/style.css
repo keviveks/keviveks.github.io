@@ -113,7 +113,44 @@ a {
 
 .hero .wrap {
   position: relative;
+  z-index: 1;
   width: min(1180px, calc(100% - 48px));
+}
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: radial-gradient(
+    560px circle at var(--glow-x, 50%) var(--glow-y, 35%),
+    color-mix(in srgb, var(--accent) 12%, transparent),
+    transparent 70%
+  );
+}
+
+.hero.is-glowing .hero-glow {
+  opacity: 1;
+}
+
+.hero-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--accent) 65%, var(--line)) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--accent) 65%, var(--line)) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image:
+    radial-gradient(circle 240px at var(--glow-x, 50%) var(--glow-y, 35%), #000, transparent 72%),
+    linear-gradient(to bottom, #000 10%, transparent 88%);
+  mask-composite: intersect;
+  -webkit-mask-image:
+    radial-gradient(circle 240px at var(--glow-x, 50%) var(--glow-y, 35%), #000, transparent 72%),
+    linear-gradient(to bottom, #000 10%, transparent 88%);
+  -webkit-mask-composite: source-in;
 }
 
 .hero-grid {
@@ -518,10 +555,16 @@ h1 {
   .card,
   .card::before,
   .site-header,
+  .hero-glow,
   .js .reveal-item,
   .js .timeline::before {
     animation: none;
     transition: none;
+  }
+
+  .hero-glow,
+  .hero.is-glowing .hero-glow {
+    opacity: 0;
   }
 
   .hero-line,
