@@ -395,8 +395,8 @@ h1 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 24px;
-  padding-bottom: 22px;
+  gap: 6px 24px;
+  padding-bottom: 32px;
 }
 
 .timeline li:last-child {
@@ -427,8 +427,20 @@ h1 {
   color: var(--muted);
 }
 
-.role {
+.role-block {
   flex: 1 1 220px;
+  min-width: 0;
+}
+
+.role {
+  display: block;
+  font-weight: 500;
+}
+
+.role-block p {
+  margin: 8px 0 0;
+  max-width: 68ch;
+  color: var(--muted);
 }
 
 .contact-links {
